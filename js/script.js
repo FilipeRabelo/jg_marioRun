@@ -14,7 +14,7 @@ const loop = setInterval(() => {
   const pipePosition  = pipe.offsetLeft;
   const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '');
 
-  console.log(marioPosition);
+  // console.log(marioPosition);
 
   // condicao onde o jogo acaba
 
@@ -36,4 +36,23 @@ const loop = setInterval(() => {
 
 }, 10);
 
-document.addEventListener("keydown", jump);
+// document.addEventListener("keydown", jump);
+
+// Função para tratar eventos de tecla e toque
+
+const handleEvent = (event) => {
+
+  if (event.type === 'keydown' && event.key === ' ') { // Verifica se a tecla pressionada é a barra de espaço
+    jump();
+  }
+
+  if (event.type === 'touchstart') { // Verifica se é um toque na tela
+    jump();
+  }
+
+};
+
+// Adiciona eventos de teclado e toque
+
+document.addEventListener("keydown", handleEvent);
+document.addEventListener("touchstart", handleEvent);
