@@ -7,11 +7,10 @@
 .gamer-board{
   width: 100%;
   height: 500px;
-  overflow: hidden;
-
-  border-bottom: 15px solid rgb(35,160,35);
   margin: 0 auto;
+  border-bottom: 15px solid rgb(35,160,35);
   background: linear-gradient(#87ceeb, #e0f6ff);
+  overflow: hidden;
   position: relative;
 }
 
@@ -80,14 +79,4 @@
   to{
     right: 100%;
   }
-}
-
-.restart {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0); /* Transparente */
-  cursor: pointer;
 }
