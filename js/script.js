@@ -55,4 +55,4 @@ const handleEvent = (event) => {
 // Adiciona eventos de teclado e toque
 
 document.addEventListener("keydown", handleEvent);
-document.addEventListener("touchstart", handleEvent);
+document.addEventListener("touchstart", handleEvent)
